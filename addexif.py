@@ -11,7 +11,7 @@ class BadCzoomMatch(Exception): pass
 # dt = datetime.fromtimestamp(int(unix_stamp))
 
 # CameraZOOM-20160114233054379.jpg
-czoom = re.compile('.*CameraZOOM-([0-9]{14}).*jpg')
+czoom    = re.compile('.*CameraZOOM-([0-9]{14}).*jpg')
 czoom_24 = re.compile('([0-9]{8}([0-9]{2}))')
 
 def try_czoom_fix(s):
@@ -33,13 +33,59 @@ def handle_czoom(f, stamp):
         print(my_image['datetime'])
     print(dt)
 
-def tryfile(f):
-    res = czoom.match(f)
-    if not res: raise BadCzoomMatch
-    if len(res.groups()) < 1: raise BadCzoomMatch
-    handle_czoom(f, res.group(1))
 
-with open('noexif.list.txt', 'r') as lst:
+# /1463171219540.jpg
+unixlike = re.compile('.*/(1[3-4][0-9]{8})[0-9]*.*jpg')
+def try_unixlike(f):
+    res = unixlike.match(f)
+    if res:
+        write_file(datetime.fromtimestamp(int(res.group(1))), f)
+
+# /FB_IMG_1442980032538.jpg
+fbre = re.compile('.*/FB_IMG_(1[3-4][0-9]{8})[0-9]*.*jpg')
+def try_fb(f):
+    res = fbre.match(f)
+    if res:
+        write_file(datetime.fromtimestamp(int(res.group(1))), f)
+
+# /2010-01-28-174545.jpg
+webcamre = re.compile('.*/(2[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{6}).*jpg')
+def try_webcam_date(f):
+    res = webcamre.match(f)
+    if res:
+        dt = datetime.strptime(res.group(1), '%Y-%m-%d-%H%M%S')
+        write_file(dt, f)
+
+# /IMG_20130405_195524.jpg
+imgre = re.compile('.*/([0-9]{8}_[0-9]{6}).*jpg')
+def try_img_date(f):
+    res = imgre.match(f, re.IGNORECASE)
+    if res:
+        dt = datetime.strptime(res.group(1), '%Y%m%d_%H%M%S')
+        write_file(dt, f)
+
+# /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_45.JPG
+sortedre = re.compile('.*/([0-9]{4}/[0-9]{2}).*jpg')
+def try_folder(f):
+    res = sortedre.match(f, re.IGNORECASE)
+    if res:
+        dt = datetime.strptime(res.group(1), '%Y/%m')
+        write_file(dt, f)
+
+def write_file(dt, f):
+        command = 'exiv2 -M "set Exif.Image.DateTime ' + dt.strftime("%Y:%m:%d %H:%M:%S") + '" "' + f + '"'
+        # print(f)
+        print(command)
+        # os.system(command)
+
+def tryfile(f):
+    if try_unixlike(f): return
+    if try_fb(f): return
+    if try_webcam_date(f): return
+    if try_img_date(f): return
+    if try_folder(f): return
+
+with open('tmp/all', 'r') as lst:
     line = lst.readline().strip()
     while line:
         if len(line) > 4:
@@ -48,4 +94,5 @@ with open('noexif.list.txt', 'r') as lst:
                 tryfile(line)
             except Exception as e:
                 print("FAIL(" + type(e).__name__ + "): " + line + " " + str(e))
+                raise e
         line = lst.readline().strip()
