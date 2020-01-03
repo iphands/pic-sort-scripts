@@ -18,9 +18,9 @@ def dofile(f):
         my_image = Image(image_file)
 
         if not my_image.has_exif: raise NoExif()
-        if 'datetime_original' not in dir(my_image): raise NoDateTime()
+        if 'datetime' not in dir(my_image): raise NoDateTime()
 
-        dt    = my_image['datetime_original'].split(':')
+        dt    = my_image['datetime'].split(':')
         year  = dt[0]
         month = dt[1]
         day   = dt[2].split(' ')[0]
@@ -32,16 +32,24 @@ def dofile(f):
         if not os.path.exists(directory):
             os.makedirs(directory)
 
+
+        if (DRY):
+            newpath = directory + '/' + hour + mint + sec + '-md5sum.jpg'
+            print('would move: {} -> {}'.format(f, newpath))
+            print('PASS: ' + f)
+            return
+
         md5sum  = md5(f)
         newpath = directory + '/' + hour + mint + sec + '-' + md5sum + '.jpg'
 
         if not os.path.exists(newpath):
-            shutil.copyfile(f, newpath)
+            shutil.move(f, newpath)
             print('PASS: ' + f)
         else:
             print('DUP:  ' + f)
 
-with open('list.trim.txt', 'r') as lst:
+DRY=False
+with open('./tmp/test', 'r') as lst:
     line = lst.readline().strip()
     while line:
         print('DEBUG: ' + line, flush=True)
