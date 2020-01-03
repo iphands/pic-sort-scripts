@@ -35,47 +35,57 @@ def handle_czoom(f, stamp):
 
 
 # /1463171219540.jpg
-unixlike = re.compile('.*/(1[3-4][0-9]{8})[0-9]*.*jpg')
+unixlike = re.compile('.*/(1[3-4][0-9]{8})[0-9]*.*jpg', re.IGNORECASE)
 def try_unixlike(f):
     res = unixlike.match(f)
     if res:
         write_file(datetime.fromtimestamp(int(res.group(1))), f)
+        return True
+    return False
 
 # /FB_IMG_1442980032538.jpg
-fbre = re.compile('.*/FB_IMG_(1[3-4][0-9]{8})[0-9]*.*jpg')
+fbre = re.compile('.*/FB_IMG_(1[3-4][0-9]{8})[0-9]*.*jpg', re.IGNORECASE)
 def try_fb(f):
     res = fbre.match(f)
     if res:
         write_file(datetime.fromtimestamp(int(res.group(1))), f)
+        return True
+    return False
 
 # /2010-01-28-174545.jpg
-webcamre = re.compile('.*/(2[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{6}).*jpg')
+webcamre = re.compile('.*/(2[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{6}).*jpg', re.IGNORECASE)
 def try_webcam_date(f):
     res = webcamre.match(f)
     if res:
         dt = datetime.strptime(res.group(1), '%Y-%m-%d-%H%M%S')
         write_file(dt, f)
+        return True
+    return False
 
 # /IMG_20130405_195524.jpg
-imgre = re.compile('.*/([0-9]{8}_[0-9]{6}).*jpg')
+imgre = re.compile('.*([0-9]{8}_[0-9]{6}).*jpg', re.IGNORECASE)
 def try_img_date(f):
-    res = imgre.match(f, re.IGNORECASE)
+    res = imgre.match(f)
     if res:
         dt = datetime.strptime(res.group(1), '%Y%m%d_%H%M%S')
         write_file(dt, f)
+        return True
+    return False
 
 # /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_45.JPG
-sortedre = re.compile('.*/([0-9]{4}/[0-9]{2}).*jpg')
+sortedre = re.compile('.*/([0-9]{4}/[0-9]{2}).*jpg', re.IGNORECASE)
 def try_folder(f):
-    res = sortedre.match(f, re.IGNORECASE)
+    res = sortedre.match(f)
     if res:
         dt = datetime.strptime(res.group(1), '%Y/%m')
         write_file(dt, f)
+        return True
+    return False
 
 def write_file(dt, f):
         command = 'exiv2 -M "set Exif.Image.DateTime ' + dt.strftime("%Y:%m:%d %H:%M:%S") + '" "' + f + '"'
-        # print(f)
-        print(command)
+        print(f)
+        # print(command)
         # os.system(command)
 
 def tryfile(f):

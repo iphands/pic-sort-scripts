@@ -1,0 +1,270 @@
+DEBUG: /mnt/nas/pics/old/tmp/s3/DCIM.1/Camera/.aux/IMG_20140216_195336.JPG
+PASS: /mnt/nas/pics/old/tmp/s3/DCIM.1/Camera/.aux/IMG_20140216_195336.JPG
+DEBUG: /mnt/nas/pics/old/tmp/s3/DCIM.1/Camera/IMG_20130223_143243_1.jpg
+PASS: /mnt/nas/pics/old/tmp/s3/DCIM.1/Camera/IMG_20130223_143243_1.jpg
+DEBUG: /mnt/nas/pics/old/tmp/s3/DCIM.1/Camera/IMG_20130223_143312_1.jpg
+PASS: /mnt/nas/pics/old/tmp/s3/DCIM.1/Camera/IMG_20130223_143312_1.jpg
+DEBUG: /mnt/nas/pics/old/tmp/s3/DCIM.1/Camera/IMG_20130223_143407_1.jpg
+PASS: /mnt/nas/pics/old/tmp/s3/DCIM.1/Camera/IMG_20130223_143407_1.jpg
+DEBUG: /mnt/nas/pics/old/tmp/old-rhbox/pics/2010/01/29/100_0992.JPG
+PASS: /mnt/nas/pics/old/tmp/old-rhbox/pics/2010/01/29/100_0992.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/stevie's civic 00.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/stevie's civic 00.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin & pets fireplace 02.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin & pets fireplace 02.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin & steve boxing 02.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin & steve boxing 02.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin & steve boxing 03.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin & steve boxing 03.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin & steve boxing 04.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin & steve boxing 04.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin bath 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin bath 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin bath 02.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin bath 02.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin catfishing 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin catfishing 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin catfishing 02.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin catfishing 02.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin catfishing 04.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin catfishing 04.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin catfishing 05.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin catfishing 05.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin playing cards 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin playing cards 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/couch potatoes 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/couch potatoes 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/Lauren & Susie.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/Lauren & Susie.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/max and mona 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/max and mona 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/dead bobcat 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/dead bobcat 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/dead bobcat 02.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/dead bobcat 02.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/janie01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/janie01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/janie taking orders.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/janie taking orders.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/janie taking orders2.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/janie taking orders2.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/janie with camera.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/janie with camera.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/jason painting.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/jason painting.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/mo & duck 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/mo & duck 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/modi & jarcus03.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/modi & jarcus03.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/modi & jarcus04.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/modi & jarcus04.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/Austin & Max 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/Austin & Max 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin christmas.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin christmas.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin christmas card 01.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austin christmas card 01.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austinPBJ.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austinPBJ.JPG
+DEBUG: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austinPBJ02.JPG
+PASS: /mnt/nas/pics/old/tmp/home_folder_pictures/test/2007/08/06/austinPBJ02.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/Austin & Max 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/Austin & Max 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/Lauren & Susie.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/Lauren & Susie.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin & pets fireplace 02.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin & pets fireplace 02.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin & steve boxing 02.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin & steve boxing 02.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin & steve boxing 03.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin & steve boxing 03.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin & steve boxing 04.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin & steve boxing 04.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin bath 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin bath 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin bath 02.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin bath 02.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin catfishing 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin catfishing 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin catfishing 02.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin catfishing 02.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin catfishing 04.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin catfishing 04.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin catfishing 05.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin catfishing 05.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin christmas card 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin christmas card 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin christmas.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin christmas.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austin playing cards 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austin playing cards 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austinPBJ.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austinPBJ.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/austinPBJ02.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/austinPBJ02.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/couch potatoes 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/couch potatoes 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/dead bobcat 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/dead bobcat 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/dead bobcat 02.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/dead bobcat 02.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/janie taking orders.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/janie taking orders.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/janie taking orders2.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/janie taking orders2.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/janie with camera.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/janie with camera.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/janie01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/janie01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/jason painting.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/jason painting.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/max and mona 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/max and mona 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/mo & duck 01.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/mo & duck 01.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/modi & jarcus03.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/modi & jarcus03.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/modi & jarcus04.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/modi & jarcus04.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2007/08/stevie's civic 00.JPG
+DUP:  /mnt/nas/pics/old/sorted/2007/08/stevie's civic 00.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2009/05/test.JPG
+PASS: /mnt/nas/pics/old/sorted/2009/05/test.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2010/01/100_0992.JPG
+DUP:  /mnt/nas/pics/old/sorted/2010/01/100_0992.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2011/12/WSD00001.JPG
+PASS: /mnt/nas/pics/old/sorted/2011/12/WSD00001.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2011/12/WSD00002.JPG
+PASS: /mnt/nas/pics/old/sorted/2011/12/WSD00002.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2011/12/WSD00003.JPG
+PASS: /mnt/nas/pics/old/sorted/2011/12/WSD00003.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2013/10/IMG_20131003_185037.JPG
+PASS: /mnt/nas/pics/old/sorted/2013/10/IMG_20131003_185037.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/aus.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/aus.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/biglip.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/biglip.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/chillen.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/chillen.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/gurl.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/gurl.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/pict12.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/pict12.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/pict13.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/pict13.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/thug.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/thug.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/uuuhhhgg.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/uuuhhhgg.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/whatup.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/whatup.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/06/yeah homie.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/06/yeah homie.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_1.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_1.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_10.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_10.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_11.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_11.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_12.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_12.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_13.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_13.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_14.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_14.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_15.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_15.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_16.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_16.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_17.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_17.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_18.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_18.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_19.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_19.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_2.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_2.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_20.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_20.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_21.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_21.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_22.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_22.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_23.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_23.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_24.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_24.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_25.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_25.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_26.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_26.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_27.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_27.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_28.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_28.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_29.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_29.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_3.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_3.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_30.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_30.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_31.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_31.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_32.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_32.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_33.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_33.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_34.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_34.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_35.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_35.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_36.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_36.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_37.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_37.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_38.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_38.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_39.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_39.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_4.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_4.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_40.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_40.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_41.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_41.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_42.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_42.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_43.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_43.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_44.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_44.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_45.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_45.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_46.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_46.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_47.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_47.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_48.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_48.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_49.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_49.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_5.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_5.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_50.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_50.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_6.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_6.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_7.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_7.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_8.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_8.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_9.JPG
+PASS: /mnt/nas/pics/old/sorted/2015/12/BABY ADRIAN_9.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2016/02/DSC_0003~2.JPG
+FAIL(ValueError): /mnt/nas/pics/old/sorted/2016/02/DSC_0003~2.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2016/02/DSC_0004~2.JPG
+FAIL(ValueError): /mnt/nas/pics/old/sorted/2016/02/DSC_0004~2.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2016/02/DSC_0010~2.JPG
+FAIL(ValueError): /mnt/nas/pics/old/sorted/2016/02/DSC_0010~2.JPG
+DEBUG: /mnt/nas/pics/old/sorted/2016/05/DSC_0012.JPG
+FAIL(ValueError): /mnt/nas/pics/old/sorted/2016/05/DSC_0012.JPG

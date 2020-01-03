@@ -71,7 +71,7 @@ def dofile(f):
         else:
             print('DUP:  ' + f)
 
-DRY=False
+DRY=True
 with open('./tmp/tmp.list', 'r') as lst:
     line = lst.readline().strip()
     while line:
