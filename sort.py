@@ -1,6 +1,7 @@
 import os
 import shutil
 import hashlib
+import exifread
 from exif import Image
 
 class NoExif(Exception): pass
@@ -28,18 +29,18 @@ def try_gps_date(img):
     return False
 
 def try_datetime(img, key):
-    if key in dir(img):
-        dt   = img[key].split(':')
-        data = {
-            "year":  dt[0],
-            "month": dt[1],
-            "day":   dt[2].split(' ')[0],
-            "hour":  dt[2].split(' ')[1],
-            "min":  dt[3],
-            "sec":   dt[4]
-        }
-        return data
-    return False
+    # if key in dir(img):
+    dt   = img[key].split(':')
+    data = {
+        "year":  dt[0],
+        "month": dt[1],
+        "day":   dt[2].split(' ')[0],
+        "hour":  dt[2].split(' ')[1],
+        "min":   dt[3],
+        "sec":   dt[4]
+    }
+    return data
+    # return False
 
 def dofile(f):
     with open(f, 'rb') as image_file:
@@ -66,20 +67,65 @@ def dofile(f):
         newpath = directory + '/' + data['hour'] + data['min'] + data['sec'] + '-' + md5sum + '.jpg'
 
         if not os.path.exists(newpath):
-            shutil.move(f, newpath)
+            # shutil.move(f, newpath)
             print('PASS: ' + f)
         else:
             print('DUP:  ' + f)
 
-DRY=True
-with open('./tmp/tmp.list', 'r') as lst:
+def docrtwo(f):
+    with open(f, 'rb') as fil:
+        tags = exifread.process_file(fil)
+
+        if 'EXIF DateTimeOriginal' not in tags:
+            print("SKIP (no EXIF DateTimeOriginal): " + f)
+            print(tags.keys())
+            asfd()
+            return
+
+        datetime = tags['EXIF DateTimeOriginal']
+        data = try_datetime({'test': str(datetime)}, 'test')
+
+        directory = '../sorted/' + data['year'] + '/' + data['month'] + '/' + data['day']
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+
+        has_xmp = False
+        xmp_f = f + '.xmp'
+        if os.path.exists(xmp_f):
+            has_xmp = True
+
+        md5sum  = md5(f)
+        newpath = directory + '/' + data['hour'] + data['min'] + data['sec'] + '-' + md5sum + '.CR2'
+        xmp_newpath = newpath + '.xmp'
+
+        if (DRY):
+            print('would move: {} -> {}'.format(f, newpath))
+            if has_xmp:
+                print('would move: {} -> {}'.format(xmp_f, xmp_newpath))
+            print('PASS: ' + f)
+            return
+
+        if not os.path.exists(newpath):
+            shutil.move(f, newpath)
+            if has_xmp:
+                shutil.move(xmp_f, xmp_newpath)
+            print('PASS: ' + f)
+        else:
+            print('DUP:  ' + f)
+
+
+DRY=False
+with open('/tmp/tmp.list', 'r') as lst:
     line = lst.readline().strip()
     while line:
         print('DEBUG: ' + line, flush=True)
         if len(line) > 4:
             try:
-                dofile(line)
+                if line.endswith('CR2'):
+                    docrtwo(line)
+                else:
+                    dofile(line)
             except Exception as e:
                 print("FAIL(" + type(e).__name__ + "): " + line)
-                # raise e
+                raise e
         line = lst.readline().strip()
