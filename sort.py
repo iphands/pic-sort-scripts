@@ -109,16 +109,16 @@ def docrtwo(f):
             shutil.move(f, newpath)
             if has_xmp:
                 shutil.move(xmp_f, xmp_newpath)
-            print('PASS: ' + f)
+            print('Moved {} -> {}:'.format(f, newpath))
         else:
-            print('DUP:  ' + f)
+            print('Skipped:  ' + f)
 
 
 DRY=False
 with open('/tmp/tmp.list', 'r') as lst:
     line = lst.readline().strip()
     while line:
-        print('DEBUG: ' + line, flush=True)
+        # print('DEBUG: ' + line, flush=True)
         if len(line) > 4:
             try:
                 if line.endswith('CR2'):
