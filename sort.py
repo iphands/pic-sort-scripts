@@ -1,3 +1,4 @@
+import sys
 import os
 import shutil
 import hashlib
@@ -6,6 +7,8 @@ from exif import Image
 
 class NoExif(Exception): pass
 class NoDateTime(Exception): pass
+
+DRY=False
 
 def md5(fname):
     with open(fname, 'rb') as f:
@@ -106,26 +109,32 @@ def docrtwo(f):
             return
 
         if not os.path.exists(newpath):
-            shutil.move(f, newpath)
+            shutil.copy(f, newpath)
             if has_xmp:
-                shutil.move(xmp_f, xmp_newpath)
-            print('Moved {} -> {}:'.format(f, newpath))
+                shutil.copy(xmp_f, xmp_newpath)
+            print('Moved {} -> {}'.format(f, newpath))
         else:
             print('Skipped:  ' + f)
 
+def main():
+    global DRY
+    if sys.argv[1] == "--dry":
+        DRY = True
 
-DRY=False
-with open('/tmp/tmp.list', 'r') as lst:
-    line = lst.readline().strip()
-    while line:
-        # print('DEBUG: ' + line, flush=True)
-        if len(line) > 4:
-            try:
-                if line.endswith('CR2'):
-                    docrtwo(line)
-                else:
-                    dofile(line)
-            except Exception as e:
-                print("FAIL(" + type(e).__name__ + "): " + line)
-                raise e
+    with open('/tmp/tmp.list', 'r') as lst:
         line = lst.readline().strip()
+        while line:
+            # print('DEBUG: ' + line, flush=True)
+            if len(line) > 4:
+                try:
+                    if line.endswith('CR2'):
+                        docrtwo(line)
+                    else:
+                        dofile(line)
+                except Exception as e:
+                    print("FAIL(" + type(e).__name__ + "): " + line)
+                    raise e
+            line = lst.readline().strip()
+
+if __name__ == '__main__':
+    main()
