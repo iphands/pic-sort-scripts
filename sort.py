@@ -45,50 +45,44 @@ def try_datetime(img, key):
     return data
     # return False
 
-def dofile(f):
+def _get_data_norm(image_file):
+    my_image = Image(image_file)
+
+    if not my_image.has_exif: raise NoExif()
+
+    data = try_gps_date(my_image)
+    if not data: data = try_datetime(my_image, 'datetime_original')
+    if not data: data = try_datetime(my_image, 'datetime')
+    if not data: raise NoDateTime()
+    return data
+
+def _get_data_crtwo(fil):
+    tags = exifread.process_file(fil)
+
+    if 'EXIF DateTimeOriginal' not in tags:
+        print("SKIP (no EXIF DateTimeOriginal): " + f)
+        print(tags.keys())
+        asfd()
+        return
+
+    datetime = tags['EXIF DateTimeOriginal']
+    data = try_datetime({'test': str(datetime)}, 'test')
+    return data
+
+
+def dofile(f, crtwo=False):
     with open(f, 'rb') as image_file:
-        my_image = Image(image_file)
+        data = {}
+        suff = 'jpg'
+        if crtwo:
+            suff = 'CR2'
 
-        if not my_image.has_exif: raise NoExif()
-
-        data = try_gps_date(my_image)
-        if not data: data = try_datetime(my_image, 'datetime_original')
-        if not data: data = try_datetime(my_image, 'datetime')
-        if not data: raise NoDateTime()
-
-        directory = '../sorted/' + data['year'] + '/' + data['month'] + '/' + data['day']
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-
-        if (DRY):
-            newpath = directory + '/' + data['hour'] + data['min'] + data['sec'] + '-md5sum.jpg'
-            print('would move: {} -> {}'.format(f, newpath))
-            print('PASS: ' + f)
-            return
-
-        md5sum  = md5(f)
-        newpath = directory + '/' + data['hour'] + data['min'] + data['sec'] + '-' + md5sum + '.jpg'
-
-        if not os.path.exists(newpath):
-            # shutil.move(f, newpath)
-            print('PASS: ' + f)
+        if not crtwo:
+            data = _get_data_norm(image_file)
         else:
-            print('DUP:  ' + f)
+            data = _get_data_crtwo(image_file)
 
-def docrtwo(f):
-    with open(f, 'rb') as fil:
-        tags = exifread.process_file(fil)
-
-        if 'EXIF DateTimeOriginal' not in tags:
-            print("SKIP (no EXIF DateTimeOriginal): " + f)
-            print(tags.keys())
-            asfd()
-            return
-
-        datetime = tags['EXIF DateTimeOriginal']
-        data = try_datetime({'test': str(datetime)}, 'test')
-
-        directory = '../sorted/' + data['year'] + '/' + data['month'] + '/' + data['day']
+        directory = f'../sorted/{data["year"]}/{data["month"]}/{data["day"]}'
         if not os.path.exists(directory):
             os.makedirs(directory)
 
@@ -98,23 +92,25 @@ def docrtwo(f):
             has_xmp = True
 
         md5sum  = md5(f)
-        newpath = directory + '/' + data['hour'] + data['min'] + data['sec'] + '-' + md5sum + '.CR2'
+        newpath = f'{directory}/{data["hour"]}{data["min"]}{data["sec"]}-{md5sum}.{suff}'
         xmp_newpath = newpath + '.xmp'
 
-        if (DRY):
-            print('would move: {} -> {}'.format(f, newpath))
-            if has_xmp:
-                print('would move: {} -> {}'.format(xmp_f, xmp_newpath))
-            print('PASS: ' + f)
+        prefix = ''
+        if DRY:
+            prefix = '[dry] '
+
+        # Dupe found
+        if os.path.exists(newpath):
+            print(f'{prefix}Skipped: {f} -> {newpath}')
             return
 
-        if not os.path.exists(newpath):
+        # Do move if not dry
+        if not DRY:
             shutil.copy(f, newpath)
             if has_xmp:
                 shutil.copy(xmp_f, xmp_newpath)
-            print('Moved {} -> {}'.format(f, newpath))
-        else:
-            print('Skipped:  ' + f)
+        print(f'{prefix}Moved:   {f} -> {newpath}')
+
 
 def main():
     global DRY
@@ -127,10 +123,7 @@ def main():
             # print('DEBUG: ' + line, flush=True)
             if len(line) > 4:
                 try:
-                    if line.endswith('CR2'):
-                        docrtwo(line)
-                    else:
-                        dofile(line)
+                    dofile(line, crtwo=line.endswith('CR2'))
                 except Exception as e:
                     print("FAIL(" + type(e).__name__ + "): " + line)
                     raise e
