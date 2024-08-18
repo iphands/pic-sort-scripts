@@ -118,7 +118,7 @@ def docrtwo(f):
 
 def main():
     global DRY
-    if sys.argv[1] == "--dry":
+    if len(sys.argv) == 2 and sys.argv[1] == "--dry":
         DRY = True
 
     with open('/tmp/tmp.list', 'r') as lst:
